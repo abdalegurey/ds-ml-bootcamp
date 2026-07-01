@@ -6,7 +6,7 @@ CSV_PATH = './raw_car_dataset.csv'
 df = pd.read_csv(CSV_PATH)
 
 # === INITIAL SNAPSHOT ===
-print("\n=== INITIAL HEAD ===")
+print("\n=== INITIAL HEAD ==============")
 
 
 
@@ -97,6 +97,7 @@ print(df.info())
 print("\n=== FINAL MISSING VALUES ===")
 print(df.isnull().sum())
 print(df.head(20))
+print(df.info())
 # 10) Save
 OUT_PATH = "./clean_car_dataset.csv"
 df.to_csv(OUT_PATH, index=False)
